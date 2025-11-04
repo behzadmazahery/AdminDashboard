@@ -1,0 +1,92 @@
+@font-face {
+    font-family: yekanBakh;
+    src: url(../public/YekanBakh/yekanbakhlight.ttf);
+}
+
+* {
+    font-family: yekanBakh;
+}
+
+.layout-container {
+    @apply h-screen p-4 transition-colors duration-300;
+}
+
+.layout-container.dark {
+    @apply bg-gray-900;
+}
+
+.layout-container.light {
+    @apply bg-gray-100;
+}
+
+.sidebar {
+    @apply w-[250px] h-full p-5 font-bold text-white rounded-2xl transition-colors duration-300;
+}
+
+.sidebar.dark {
+    @apply bg-gray-800;
+}
+
+.sidebar.light {
+    @apply bg-[#7258db];
+}
+
+.top-settings {
+    @apply w-full p-4 font-bold rounded-xl flex justify-between items-center transition-colors duration-300;
+}
+
+.top-settings.dark {
+    @apply bg-gray-800 text-white;
+}
+
+.top-settings.light {
+    @apply bg-white text-black;
+}
+
+.search-box {
+    @apply flex items-center p-2 rounded-xl transition-colors duration-300;
+}
+
+.search-box.dark {
+    @apply bg-gray-700;
+}
+
+.search-box.light {
+    @apply bg-gray-100;
+}
+
+.search-input {
+    @apply p-2 w-xs bg-transparent outline-none transition-colors duration-300;
+}
+
+.search-input.dark {
+    @apply text-white placeholder-gray-400;
+}
+
+.search-input.light {
+    @apply text-black placeholder-gray-500;
+}
+
+.theme-toggle {
+    @apply p-2 rounded-lg transition-colors duration-300;
+}
+
+.theme-toggle.dark {
+    @apply bg-gray-700 hover:bg-gray-600;
+}
+
+.theme-toggle.light {
+    @apply bg-gray-100 hover:bg-gray-200;
+}
+
+.menu-item {
+    @apply flex text-sm items-center gap-3 rounded-md p-2 cursor-pointer transition-colors;
+}
+
+.menu-item.dark {
+    @apply hover:bg-gray-700;
+}
+
+.menu-item.light {
+    @apply hover:bg-[#5a42c1];
+}
